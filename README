@@ -1,0 +1,15 @@
+xhtmlize
+==========
+
+Rails helper to XHTML-ize chunks of user submitted HTML. For the standardista in all of us.
+
+>> html = "<div><p>foo</p><a href='http://foo.com'>foo"
+=> "<div><p>foo</p><a href='http://foo.com'>foo"
+>> xhtmlize(html)
+=> "<div><p>foo</p><a href=\"http://foo.com\">foo</a></div>"
+
+Also comes with an ActiveRecord class method to automatically xhtmlize attributes in an after_save callback.
+
+class Comment < ActiveRecord::Base
+  xhtmlize :title, :content
+end
