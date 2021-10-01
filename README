@@ -1,4 +1,4 @@
-xhtmlize
+xml htmlize
 ==========
 
 Rails helper to XHTML-ize chunks of user submitted HTML. For the standardista in all of us.
