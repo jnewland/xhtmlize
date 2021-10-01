@@ -12,4 +12,4 @@ Also comes with an ActiveRecord class method to automatically xhtmlize attribute
 
 class Comment < ActiveRecord::Base
   xhtmlize :title, :content
-end
+End
